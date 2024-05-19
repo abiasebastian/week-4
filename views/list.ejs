@@ -1,0 +1,26 @@
+<%-include('partials/head',{title:'List1'})%>
+  <div class="container">
+    <h1>Our Price list</h1>
+
+    <table class="table">
+      <thead>
+      
+          <td>Product</td>
+          <td>Price</td>
+        
+      </thead>
+      <tbody>
+        <% for (const product of productList) { %>
+          <tr>
+           <td><%= product.name %></td>
+           <td><%= product.price %></td>
+          </tr>
+         
+         <% } %>
+      </tbody>
+     
+    </table>
+  </div>
+  
+
+<%include('partials/tail')%>

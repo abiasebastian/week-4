@@ -1,0 +1,8 @@
+
+<%-include('partials/head',{title:"List 3"})%>
+<ul class="list-group">
+    <% list3.forEach(element=>{%>
+    <li class="list-group-item active" aria-current="true"><%=element%></li>
+    <%})%>
+  </ul>
+  <%-include('partials/tail')%>
